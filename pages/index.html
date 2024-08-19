@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Arrangements Blog</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="../pages/index.html" class="logo">
+                  <img src="../src/images/DeCapoReverberationLogo.png" alt="Dot Arrangements Blog Logo">
+                </a>
+              </div>
+            <div class="nav-items">
+              <a href="../pages/list.html" class="nav-button">Arrangements</a>
+              <input type="text" id="search" placeholder="Search...">
+              <button id="search-button">Search</button>
+              <div class="social-media-icons">
+                <!-- Social Media Icons -->
+              </div>
+            </div>
+          </nav>
+        
+    </header>
+    
+    <section class="welcome-block">
+
+        <div class="hero-logo-container">
+            <div class="glow-orange"></div>
+            <div class="glow-blue"></div>
+            <img src="../src/images/DeCapoReverberationLogo.png" alt="Dot Arrangements Blog Logo" class="hero-logo">
+          </div>
+          
+        <h1>Welcome to Dot Arrangements Blog</h1>
+        <button id="see-latest">See Latest</button>
+        <p>Explore my arranged music and share your thoughts!</p>
+      </section>
+
+    <section id="posts-placeholder" class="posts-section">
+        <div class="container">
+            <h2>Recent Posts</h2>
+            <div class="view-toggle">
+                <i id="list-view" class="fas fa-list"></i>
+                <i id="card-view" class="fas fa-th-large"></i>
+            </div>
+            <div id="posts-container" class="posts-list">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: your.email@example.com</p>
+        <p>© 2024 Dot Arrangements Blog</p>
+    </footer>
+
+    <!-- Music Player Modal -->
+    <div id="music-player-modal" class="modal">
+
+        <div class="modal-content">
+            <span id="close-modal"><i class="fas fa-arrow-left"></i></span>
+
+            <img id="modal-logo" src="" alt="Album Logo">
+            <h2 id="modal-title"></h2>
+
+            <div class="modal-controls">
+                <div id="play-content" >
+                    <input type="range" id="seek-slider" min="0" max="100" value="0">
+                    <button id="play-pause"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div id="duration-content" >
+                    <span id="current-time">00:00</span> / <span id="total-duration">00:00</span>
+                 </div>
+
+                 <div id="volume-content" >
+                <span id="current-volume">50%</span> Volume
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+             </div>
+            </div>
+
+            <audio id="audio-player" src="" preload="auto"></audio>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

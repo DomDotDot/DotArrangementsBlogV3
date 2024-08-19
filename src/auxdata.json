@@ -1,0 +1,116 @@
+{
+    "posts": [
+        {
+            "title": "Satori Maiden",
+            "originalName": "Third Eye",
+            "description": "My first music arrangement, Touhou",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723931551/Satori_Maiden_jsukhm.mp3",
+            "date": "2021-02-08",
+            "author": "Dot",
+            "tags": ["Touhou", "Legacy", "Videogame"]
+        },
+        {
+            "title": "Angela 2",
+            "originalName": "Angela Realization 2",
+            "description": "Library of Ruina arrangement, where you realize Angela's floors",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723931541/Angela2_yd4xyb.mp3",
+            "date": "2024-07-20",
+            "author": "Dot",
+            "tags": ["LibraryOFRuina", "Musescore4", "Videogame"]
+        },
+
+        {
+            "title": "KING MS4",
+            "originalName": "Kanaria - KING ft. GUMI",
+            "description": "GUMI - Kanaria arrangement! Ah, one of greatest bangers made by Kanaria",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723939826/KINGMS4_aoz1mt.mp3",
+            "date": "2023-06-26",
+            "author": "Dot",
+            "tags": ["Vocaloid", "Musescore4"]
+        },
+
+        {
+            "title": "Lunatic",
+            "originalName": "Lunatic Eyes",
+            "description": "Literal brainwashing rabbit girl. Wanna your brain turn into mush? Welcome to Bamboo forest then",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723939901/Lunatic_zwlpjk.mp3",
+            "date": "2023-11-13",
+            "author": "Dot",
+            "tags": ["Touhou", "Musescore4", "Videogame"]
+        },
+
+        {
+            "title": "Cute Devil",
+            "originalName": "Cute Devil ~ Innocence",
+            "description": "Even Angel has a little imp in it :)",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723932062/CuteDevil_fv7ghf.mp3",
+            "date": "2022-03-18",
+            "author": "Dot",
+            "tags": ["Touhou", "Legacy", "Videogame"]
+        },
+
+        {
+            "title": "Date A Live MS4",
+            "originalName": "Date A Live, Opening 1",
+            "description": "Such a great show. Here is beginning of this anime! Best opening is first one, IMO",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723932219/DateALiveMS4_dwprk8.mp3",
+            "date": "2022-03-18",
+            "author": "Dot",
+            "tags": ["Anime", "Musescore4"]
+        },
+
+        {
+            "title": "Copycat MS4",
+            "originalName": "CircusP - Copycat ft. GUMI",
+            "description": "Arrange that, arranger-at! This is my first arrangement on MuseScore4 (I used Musescore3 before if you didnt know)",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723932215/CopyCatMS4_xkhlyk.mp3",
+            "date": "2022-12-16",
+            "author": "Dot",
+            "tags": ["Vocaloid", "Musescore4"]
+        },
+
+        {
+            "title": "DrakoBloxxers",
+            "originalName": "Zero Project - Gothic",
+            "description": "Build to survive DrakoBloxxers",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723931471/DrakoBloxxers_xeoscl.mp3",
+            "date": "2024-05-29",
+            "author": "Dot",
+            "tags": ["Videogame", "Musescore4"]
+        },
+
+        {
+            "title": "Delete This Tweet MS4",
+            "originalName": "Kevin Temmer - Delete This Tweet",
+            "description": "Pack it in and just accept defeat",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723931170/DeleteThisTweetMS4_ixnzyd.mp3",
+            "date": "2024-05-23",
+            "author": "Dot",
+            "tags": ["Musescore4"]
+        },
+
+        {
+            "title": "Chaos Fantazy",
+            "originalName": "ParagonX9 - Chaoz Fantasy",
+            "description": "Immortal classic",
+            "albumLogo": "../src/images/BlackSilenceIcon.webp",
+            "audioUrl": "https://res.cloudinary.com/dsju3zr2q/video/upload/v1723940269/ChaosFantazy_uyyydx.mp3",
+            "date": "2024-05-23",
+            "author": "Dot",
+            "tags": ["Musescore4"]
+        }
+
+
+
+    ]
+}
+
