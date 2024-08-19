@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let fuse;
 
        // Загрузка данных и инициализация
-       fetch('../src/data.json')
+       fetch('https://domdotdot.github.io/DotArrangementsBlogV3/src/data.json')
        .then(response => response.json())
        .then(data => {
            allPosts = data.posts;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Only run this block if postsPlaceholder exists (index.html or list.html)
     if (postsPlaceholder) {
-        fetch('../src/data.json')
+        fetch('https://domdotdot.github.io/DotArrangementsBlogV3/src/data.json')
             .then(response => response.json())
             .then(data => {
                 // Sort posts by date (recent first)
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // If this is index.html, show only the 10 most recent posts
                 if (window.location.pathname.endsWith('index.html')) {
-                    fetch('../src/data.json')
+                    fetch('https://domdotdot.github.io/DotArrangementsBlogV3/src/data.json')
                         .then(response => response.json())
                         .then(data => {
                             // Ensure correct sorting by date (recent first)
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (postsPlaceholder) {
-        fetch('../src/data.json')
+        fetch('https://domdotdot.github.io/DotArrangementsBlogV3/src/data.json')
             .then(response => response.json())
             .then(data => {
                 const options = {
@@ -343,7 +343,7 @@ function closeVersionsModal() {
     // Tag filtering logic (only if tags-container exists)
     const tagsContainer = document.getElementById('tags-container');
     if (tagsContainer) {
-        fetch('../src/data.json')
+        fetch('https://domdotdot.github.io/DotArrangementsBlogV3/src/data.json')
             .then(response => response.json())
             .then(data => {
                 const tags = [...new Set(data.posts.flatMap(post => post.tags))];  // Unique tags
@@ -473,7 +473,7 @@ function closeVersionsModal() {
 
     // Only run this block if postsPlaceholder exists (list.html)
 if (postsPlaceholder) {
-    fetch('../src/data.json')
+    fetch('https://domdotdot.github.io/DotArrangementsBlogV3/src/data.json')
         .then(response => response.json())
         .then(data => {
             const options = {
