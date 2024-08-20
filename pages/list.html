@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrangements - Dot Arrangements Blog</title>
-    <link rel="stylesheet" href="../style/styles.css">
+<<<<<<< HEAD
 
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://domdotdot.github.io/DotArrangementsBlogV3/favicon.ico">
+=======
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+>>>>>>> parent of fbcb265 (fixes)
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
-    
 </head>
 <body>
     <!-- Include the updated navigation bar from index.html -->
@@ -97,30 +102,43 @@
      <div id="music-player-modal" class="modal">
 
         <div class="modal-content">
-            <span id="close-modal"><i class="fas fa-arrow-left"></i></span>
-
+            <span id="close-modal">&times;</span>
             <img id="modal-logo" src="" alt="Album Logo">
             <h2 id="modal-title"></h2>
 
             <div class="modal-controls">
-                <div id="play-content" >
-                    <input type="range" id="seek-slider" min="0" max="100" value="0">
-                    <button id="play-pause"><i class="fas fa-play"></i></button>
+
+                <div id="play-content">
+                  <button id="play-pause"><i class="fas fa-play"></i></button>
+                  <button id="play-in-background" class="headphone-icon"><i class="fas fa-headphones"></i></button>
+                  <input type="range" id="seek-slider" min="0" max="100" value="0">
                 </div>
 
-                <div id="duration-content" >
-                    <span id="current-time">00:00</span> / <span id="total-duration">00:00</span>
-                 </div>
+                <div id="duration-content">
+                  <span id="current-time">00:00</span> / <span id="total-duration">00:00</span>
+                </div>
+                
+                <div id="volume-content">
+                  <i class="fas fa-volume-up"></i>
+                  <input type="range" id="volume-slider" min="0" max="100" value="100">
+                </div>
 
-                 <div id="volume-content" >
-                <span id="current-volume">50%</span> Volume
-                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
-             </div>
+              </div>
             </div>
 
             <audio id="audio-player" src="" preload="auto"></audio>
         </div>
     </div>
+
+    <div id="background-player" class="background-player">
+        <img id="bg-player-logo" src="" alt="Album Logo">
+        <div class="bg-player-info">
+          <h3 id="bg-player-title"></h3>
+          <span id="bg-current-time">00:00</span>
+        </div>
+        <button id="bg-play-pause" class="bg-player-control"><i class="fas fa-play"></i></button>
+        <button id="bg-close-player" class="bg-player-control">×</button>
+      </div>
 
     <script src="../js/script.js"></script>
 </body>

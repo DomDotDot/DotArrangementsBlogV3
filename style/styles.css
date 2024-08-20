@@ -16,7 +16,7 @@
     flex-direction: column;
     min-height: 100vh;
     background-image: url("../src/images/backgroundpattern.png"); /* Replace with your image */
-    background-size: cover;
+    background-size: auto;
     background-position: center;
   }
 
@@ -153,7 +153,7 @@
 
 .welcome-block {
     text-align: center;
-    margin: 50px 0;
+    margin: 25px 0;
 }
 
 .welcome-block h1 {
@@ -558,6 +558,8 @@ button:hover, .tag-button:hover {
     max-height: 80%;
     overflow-y: auto;
     flex-direction: column;
+    height: fit-content;
+    width: 30%;
 }
 
 .versions-content h3 {
@@ -592,3 +594,41 @@ button:hover, .tag-button:hover {
 .dependent-version:hover {
     background-color: var(--accent-color);
 }
+
+.background-player {
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    padding: 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .background-player img {
+    width: 50px;
+    height: 50px;
+    object-fit: scale-down;
+    margin-right: 10px;
+  }
+  
+  .background-player input[type="range"] {
+    width: 100px;
+  }
+  
+  .background-player #bg-seek-slider {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  
+  .background-player #bg-close-player {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }

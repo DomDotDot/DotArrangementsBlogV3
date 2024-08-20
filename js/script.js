@@ -133,64 +133,38 @@ function displayPosts(posts) {
     postsPlaceholder.innerHTML = '';  // Clear current posts
     posts.forEach(post => {
         const isNew = newPosts.includes(post);
+        const isDependentVersion = post.mainVersion !== undefined;
         const postCard = document.createElement('div');
         postCard.className = 'post-card';
         postCard.innerHTML = `
             <img src="${post.albumLogo}" alt="${post.title} Album Logo">
             <div class="post-card-content">
                 ${isNew ? '<span class="new-pin">New!</span>' : ''}
+                ${isDependentVersion ? '<span class="dependent-version">Dependent Version</span>' : ''}
                 <h2>${post.title}</h2>
                 <p class="original-name">${post.originalName}</p>
                 <p>${post.description}</p>
                 <p class="date">Arranged on: ${post.date}</p>
-                <button onclick="openPlayer('${post.albumLogo}', '${post.title}', '${post.audioUrl}')">Play Music</button>
-                ${post.versions ? `<button onclick="showVersions('${post.id}')">Show Versions</button>` : ''}
+                <button class="play-music">Play Music</button>
+                ${post.versions ? '<button class="show-versions">Show Versions</button>' : ''}
             </div>
         `;
+        
+        const playMusicBtn = postCard.querySelector('.play-music');
+        playMusicBtn.addEventListener('click', () => openPlayer(post.albumLogo, post.title, post.audioUrl));
+        
+        if (post.versions) {
+            const showVersionsBtn = postCard.querySelector('.show-versions');
+            showVersionsBtn.addEventListener('click', () => showVersions(post.id));
+        }
+        
+        if (isDependentVersion) {
+            const dependentVersionSpan = postCard.querySelector('.dependent-version');
+            dependentVersionSpan.addEventListener('click', () => showVersions(post.mainVersion));
+        }
+        
         postsPlaceholder.appendChild(postCard);
     });
-}
-
-function displayPosts(posts) {
-    function displayPosts(posts) {
-        if (!postsPlaceholder) return;
-        
-        postsPlaceholder.innerHTML = '';  // Clear current posts
-        posts.forEach(post => {
-            const isNew = newPosts.includes(post);
-            const isDependentVersion = post.mainVersion !== undefined;
-            const postCard = document.createElement('div');
-            postCard.className = 'post-card';
-            postCard.innerHTML = `
-                <img src="${post.albumLogo}" alt="${post.title} Album Logo">
-                <div class="post-card-content">
-                    ${isNew ? '<span class="new-pin">New!</span>' : ''}
-                    ${isDependentVersion ? '<span class="dependent-version">Dependent Version</span>' : ''}
-                    <h2>${post.title}</h2>
-                    <p class="original-name">${post.originalName}</p>
-                    <p>${post.description}</p>
-                    <p class="date">Arranged on: ${post.date}</p>
-                    <button class="play-music">Play Music</button>
-                    ${post.versions ? '<button class="show-versions">Show Versions</button>' : ''}
-                </div>
-            `;
-        
-            const playMusicBtn = postCard.querySelector('.play-music');
-            playMusicBtn.addEventListener('click', () => openPlayer(post.albumLogo, post.title, post.audioUrl));
-            
-            if (post.versions) {
-                const showVersionsBtn = postCard.querySelector('.show-versions');
-                showVersionsBtn.addEventListener('click', () => showVersions(post.id));
-            }
-            
-            if (isDependentVersion) {
-                const dependentVersionSpan = postCard.querySelector('.dependent-version');
-                dependentVersionSpan.addEventListener('click', () => showVersions(post.mainVersion));
-            }
-            
-            postsPlaceholder.appendChild(postCard);
-        });
-    }
 }
 
 function showVersions(postId) {
